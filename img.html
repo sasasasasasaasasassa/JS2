@@ -1,23 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/style.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <title></title>
 </head>
 <body>
-
-    <div class="img-btn">
-        <img src="images/5.gif" name="picture" />
-        <div class="btn">
-            <a href="#" onclick="return nazatImage()">beck</a>
-            <a href="#" onclick="return nextImage()">next</a>
-        </div>
-    </div>
+    <div id="cardContainer"></div>
     
-
-
+    <div class="controls">
+        <button onclick="prevCard()">← Назад</button>
+        <span id="counter"></span>
+        <button onclick="nextCard()">Вперед →</button>
+    </div>
     <script src="./main.js"></script>
 </body>
 </html>
